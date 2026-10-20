@@ -1,0 +1,10 @@
+{
+  "name": "dmclm-python-backend-launcher",
+  "version": "1.0.0",
+  "private": true,
+  "description": "npm launcher for the DMCLM FastAPI/Uvicorn Python backend. Does NOT convert the backend to Node.js.",
+  "scripts": {
+    "start": "node start.js",
+    "start:direct": "cd .. && set PYTHONPATH=backend&& .venv\\Scripts\\python.exe -m uvicorn src.api_server:app --host 127.0.0.1 --port 8000"
+  }
+}

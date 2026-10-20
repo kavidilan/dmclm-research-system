@@ -1,0 +1,37 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local environments and dependencies
+.venv/
+.venv-*/
+**/.venv/
+**/.venv-*/
+node_modules/
+**/node_modules/
+
+# Local datasets, model artifacts, experiments, and backups
+/data/
+/models/
+/results/
+/backups/
+*.db
+*.sqlite
+*.sqlite3
+*.joblib
+*.pkl
+*.bak*
+*.tsbuildinfo
+
+# Generated files and caches
+__pycache__/
+**/__pycache__/
+.pytest_cache/
+**/.pytest_cache/
+frontend/dist/
+
+# Local editor settings
+.vscode/
